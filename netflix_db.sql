@@ -1,0 +1,14 @@
+create table movie(
+	id int not null auto_increment,
+    title varchar(255),
+    duration varchar(20),
+    image_url varchar(500),
+    synopsis varchar(5000),
+    primary key(id)
+);
+
+SELECT * FROM movie;
+
+UPDATE movie SET title = "IT", duration = "135", image_url = "https://upload.wikimedia.org/wikipedia/id/6/65/IT_Bill_Skarsgard_Poster_2017.jpg", synopsis = "In October 1988, Bill Denbrough crafts a paper sailboat for Georgie, his six-year-old brother. Georgie sails the boat along the rainy streets of small town Derry, Maine, only to have it fall down a storm drain. As he attempts to retrieve it, Georgie sees a clown in the drain, who introduces himself as 'Pennywise the Dancing Clown'. Pennywise entices Georgie to come closer, then bites his arm off and drags him into the sewer. The following summer, Bill and his friends Richie Tozier, Eddie Kaspbrak, and Stan Uris run afoul of older bully Henry Bowers and his gang. Bill, still haunted by Georgie's disappearance, calculates that his brother's body may have washed up in a marshy wasteland called the Barrens. He recruits his friends to investigate, believing Georgie may still be alive. Ben Hanscom, one of Bill's new classmates, learns that the town has been plagued by unexplained tragedies and child disappearances for centuries. Targeted by Bowers' gang, Ben flees into the Barrens and meets Bill's group. They find the sneaker of a missing girl named Betty Ripsom, while a member of the Bowers Gang, Patrick Hockstetter, is killed by Pennywise while searching the sewers for Ben." WHERE id = 2;
+
+insert into movie(title, duration, image_url, synopsis) values("The Maze Runner", "113", "https://images-na.ssl-images-amazon.com/images/I/51ihDXYQARL._AC_.jpg", "Thomas wakes up in a metal elevator that brings him to a place called the Glade. He has no memory of who he is or how he got there. He gradually discovers that the Glade is run by two boys: Alby, the leader, and Newt, the second-in-charge, who both maintain order by enforcing simple but effective rules. The elevator box surfaces from under the ground once every week supplying new food, tools, medicine, and sometimes weapons. Every month a new boy with no memory of anything but his first name finds himself in that elevator box. The Glade is surrounded by a square of 4 mile-high walls made of concrete. These walls have openings in them, which slide shut like doors every night. Outside the walls is the Maze, a labyrinth of high concrete walls covered in ivy that changes every day. The Maze houses strange, lethal creatures known as Grievers. Grievers are described as amorphous monsters of metal and flesh. The Gladers are trying to stay alive as well as 'solve' the Maze by appointing 'runners' to run through it as fast as they can while tracking movements of the walls and trying to find an exit to escape.")
